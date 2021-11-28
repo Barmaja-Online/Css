@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+.box {
+  margin: 5px 0;
+}
+
+.parent {
+  border: 1px solid #00a19d;
+  width: 300px;
+}
+
+.pixel {
+  background-color: #ff9b6a;
+  width: 120px;
+}
+
+.percent {
+  background-color: aqua;
+  width: 50%;
+}
+
+.vw-unit {
+  background-color: bisque;
+  width: 50vw;
+}
+
+.vh-unit {
+  background-color: rgb(10, 241, 60);
+  width: 50vh;
+  height: 25vh;
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    --primaryColor: #11f00a;
+  }
+}

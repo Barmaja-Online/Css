@@ -1,0 +1,55 @@
+:root {
+  --primaryColor: #1045f1;
+  --primaryColorContrast: #ffffff;
+  --shadow: 0px 0px 15px var(--primaryColor);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #032696;
+}
+
+nav {
+  padding: 0.5rem 1rem;
+  max-width: 1290px;
+  margin: auto;
+  background-color: var(--primaryColor);
+  color: var(--primaryColorContrast);
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+nav .menu {
+  display: flex;
+}
+
+nav .menu .action {
+  margin: 0 1rem;
+}
+
+.tab {
+  margin: 1rem;
+  border: 1px solid var(--primaryColor);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.tab h2 {
+  color: var(--primaryColor);
+  text-align: center;
+  text-shadow: var(--shadow);
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    --primaryColor: #24f808;
+  }
+}
